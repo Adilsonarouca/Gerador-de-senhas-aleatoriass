@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Fira+Sans:wght@300&family=Inter:wght@300;400&family=Montserrat:wght@400;600&family=Poppins:ital,wght@0,200;0,300;1,200&family=Roboto+Serif:opsz@8..144&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <title>Gerador de Senhas</title>
+</head>
+
+<body>
+    
+   
+    <main class="container-input">
+        <p class="gerador" >GERADOR DE SENHAS </p>
+        <span class="tamanho" > Tamanho <span id="valor"></span> caracteres </span>
+
+        <input id="slider" class="slider" type="range" min="5" max="20" value="12">
+        <button id="button" onclick="generatePassword()" class="button-cta">Gerador de senhas aleatorias </button>
+    </main>
+
+    <div id="container-password"  onclick="copyPassword()" class="container-password hide">
+        <span class="title">Sua senha gerada foi:</span>
+        <span id="password" class="password" ></span>
+        <span class="tooltip" >Copiar senha gerada</span>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
