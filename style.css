@@ -114,3 +114,33 @@ transform: scale(1.05);
     bottom: 50px;
     opacity: 1;
 }
+
+@media (max-width:490px){
+    .gerador{
+        font-size:32px;
+        text-align: center;
+    }
+} 
+
+@media (max-width: 490px){
+    .tamanho #valor{
+        font-size: 20px;
+        text-align: center;
+        margin:  0 
+       
+    }
+}
+
+     
+
+
+@media (max-width: 495px){
+    .container-input{
+        max-width: 350px;
+    margin: 14px 0;
+    }
+    .container-password{
+        max-width: 350px;
+        margin: 14px 0;
+    }
+}
